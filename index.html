@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback Form</title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <h1 class="shining-title">🌾 Straw Hats Feedback Form 🌾</h1>
+        <div id="success-message" class="success-message"></div>
+        <form id="feedback-form" action="/submit" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" rows="7" cols="60" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+        <script src="app.js"></script>
+    </body>
+</html>
